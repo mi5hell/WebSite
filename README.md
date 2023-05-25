@@ -94,13 +94,14 @@ Pour cela, suivez ces étapes :
 			
 ## 9. Version Logiciel
 Notre projet fonctionne avec les versions logiciels suivantes :
-	- SonarQube : Version 10.0 (build 68432)
-	- Jenkins : Version 2.387.3
-		- Plugins Jenkins :
-			- OWASP Markup Formatter Plugin : Version159.v25b_c67cd35fb_
-			- SonarQube Scanner for Jenkins : Version2.15
-			- Maven Integration plugin : Version3.22
-			- Parameterized Scheduler : Version1.2
+SonarQube : Version 10.0 (build 68432)
+Jenkins : Version 2.387.3
+
+Plugins Jenkins :
+	- OWASP Markup Formatter Plugin : Version159.v25b_c67cd35fb_
+	- SonarQube Scanner for Jenkins : Version2.15
+	- Maven Integration plugin : Version3.22
+	- Parameterized Scheduler : Version1.2
 
 ## 10. Conclusion
 GitHub, Jenkins et SonarQube sont des outils puissants qui peuvent grandement améliorer le processus de développement logiciel. L'intégration de ces outils permet une collaboration efficace, une intégration continue et une analyse approfondie de la qualité du code. En utilisant GitHub pour gérer le code source, Jenkins pour l'intégration continue et SonarQube pour l'analyse de la qualité, les équipes de développement peuvent travailler plus efficacement et produire un code de meilleure qualité. N'hésitez pas à explorer davantage ces outils et à les intégrer à vos propres projets !
