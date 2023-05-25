@@ -67,14 +67,18 @@ Pour configurer l'intégration entre GitHub et Jenkins, suivez les étapes suiva
 2. Retourner sur Sonarqube pour vérifier le traitement des données
 
 ## 8. Option supplémentaire avec Jenkins
-Il est possible d'ajouter des fonctionnalités sur Jenkins, notamment d'automatisation du lancement du Build et également pour prendre en compte les vulnérabilités présentes sur la partie HTML. Pour cela, suivez ces étapes :
+Il est possible d'ajouter des fonctionnalités sur Jenkins, notamment d'automatisation du lancement du Build et également pour prendre en compte les vulnérabilités présentes sur la partie HTML avec OWASP. 
+
+Le Top 10 OWASP (Open Web Application Security Project), il s'agit d'une liste des dix principales vulnérabilités de sécurité des applications web. Cette liste est établie par une organisation à but non lucratif qui vise à améliorer la sécurité des logiciels. Les dix principales vulnérabilités OWASP fournissent un guide précieux pour les développeurs afin de se prémunir contre les failles les plus courantes et de renforcer la sécurité de leurs applications.Il est possible de l'intégrer via un plugins dans jenkins.
+
+Pour cela, suivez ces étapes :
 
 1. Automisation du lancement du Build sur Jenkins :
 	  - Ajouter le Plugin : Parameterized Scheduler
 	  - Puis on retourne sur le projet dans jenkins > Configurer > Ce qui déclenche le build > Construire périodiquement > Insérer le temps que l'on souhaite
 		    - Nous avons mis toutes les 10 minutes avec : H/10 * * * *
 
-2. Prendre en compte les vulnérabilités HTML :
+2. Prendre en compte les vulnérabilités HTML ( OAWSP ) :
 	  - Ajouter le Plugin : OWASP Markup Formatter Plugin
 	  - Dans Administrer Jenkins > Configurer la sécurité globale > Markup Formatter > Safe HTML
 		    - Puis sur SonarQube > sur notre projet > Issues :
