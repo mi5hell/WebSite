@@ -26,7 +26,7 @@ SonarQube est une plateforme d'analyse de la qualité du code. Elle fournit des 
 
 ## 4. Comment fonctionnent GitHub, Jenkins et SonarQube ensemble ?
 
-![alt text](https://github.com/mi5hell/WebSite/blob/main/schema-infra.jpg)
+![alt text](https://github.com/mi5hell/WebSite/blob/main/.src/schema-infra.jpg)
 
 L'intégration de GitHub, Jenkins et SonarQube permet de mettre en place un flux de travail cohérent pour le développement logiciel. Voici comment ils interagissent ensemble :
 
