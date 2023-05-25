@@ -45,9 +45,9 @@ Voici le schéma technique du fonctionnement des trois solutions :
 ## 5. Installation des plugins sur Jenkins
 Deux plugins sont nécessaires pour permettre la communication entres les différentes solutions :
 1. Administraion > Gestion des plugins :
-			- Maven Integration
-			- SonarQube Scanner
-				  - Configuration à faire > Configuration globale des outils > Ajouter SonarQube Scanner
+	- Maven Integration
+	- SonarQube Scanner
+		- Configuration à faire > Configuration globale des outils > Ajouter SonarQube Scanner
 
 ## 6. Configuration de la liaion entre SonarQube et Jenkins
 Pour configurer la liaion entre SonarQube et Jenkins, suivez les étapes suivantes :
