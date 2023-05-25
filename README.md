@@ -5,7 +5,7 @@ Bienvenue dans la présentation du projet SonarQube ! Cette documentation vous g
 
 ## Table des matières
 
-- [1. Qu'est-ce que GitHub ?](#1-.-qu'est---ce-que-github-)
+- [1. Qu'est-ce que GitHub ?](#1-c'est-quoi-github-)
 - [2. Qu'est-ce que Jenkins ?](#2-qu'est-ce-que-jenkins-)
 - [3. Qu'est-ce que SonarQube ?](#3-qu'est-ce-que-sonarqube-)
 - [4. Comment fonctionnent GitHub, Jenkins et SonarQube ensemble ?](#4-comment-fonctionnent-github-jenkins-et-sonarqube-ensemble-)
@@ -15,7 +15,7 @@ Bienvenue dans la présentation du projet SonarQube ! Cette documentation vous g
 - [8. Option supplémentaire avec Jenkins](#8-pption-supplémentaire-avec-jenkins)
 - [9. Conclusion](#9-conclusion)
 
-## 1. Qu'est-ce que GitHub ?
+## 1. C'est quoi GitHub ?
 GitHub est une plateforme de développement collaboratif basée sur Git. Elle permet aux développeurs de stocker, gérer et partager leur code source, ainsi que de collaborer efficacement avec d'autres contributeurs. GitHub fournit également des fonctionnalités telles que le suivi des problèmes, les demandes d'extraction (pull requests) et l'hébergement gratuit de dépôts de code open source.
 
 ## 2. Qu'est-ce que Jenkins ?
