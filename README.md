@@ -86,13 +86,13 @@ Pour cela, suivez ces étapes :
 1. Automisation du lancement du Build sur Jenkins :
 	  - Ajouter le Plugin : Parameterized Scheduler
 	  - Puis on retourne sur le projet dans jenkins > Configurer > Ce qui déclenche le build > Construire périodiquement > Insérer le temps que l'on souhaite
-		    - Nous avons mis toutes les 10 minutes avec : H/10 * * * *
+	  	- Nous avons mis toutes les 10 minutes avec : H/10 * * * *
 
 2. Prendre en compte les vulnérabilités HTML ( OWASP ) :
 	  - Ajouter le Plugin : OWASP Markup Formatter Plugin
 	  - Dans Administrer Jenkins > Configurer la sécurité globale > Markup Formatter > Safe HTML
-		    - Puis sur SonarQube > sur notre projet > Issues :
-		        -> Un nouvel onglet Security Category est présent ou l'on peut voir les vulnérabilitées
+	  	- Puis sur SonarQube > sur notre projet > Issues :
+	  		- Un nouvel onglet Security Category est présent ou l'on peut voir les vulnérabilitées
 			
 ## 9. Version Logiciel
 Notre projet fonctionne avec les versions logiciels suivantes :
