@@ -94,10 +94,9 @@ Pour cela, suivez ces étapes :
 			
 ## 9. Version Logiciel
 Notre projet fonctionne avec les versions logiciels suivantes :
-SonarQube : Version 10.0 (build 68432)
-Jenkins : Version 2.387.3
-
-Plugins Jenkins :
+1. SonarQube : Version 10.0 (build 68432)
+2. Jenkins : Version 2.387.3
+3. Plugins Jenkins :
 	- OWASP Markup Formatter Plugin : Version159.v25b_c67cd35fb_
 	- SonarQube Scanner for Jenkins : Version2.15
 	- Maven Integration plugin : Version3.22
