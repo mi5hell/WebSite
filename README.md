@@ -71,7 +71,7 @@ Pour configurer l'intégration entre GitHub et Jenkins, suivez les étapes suiva
 		   - Ici on définit l'analyse avec le nom du projet, le token de sonarqube et ce qu'on souhaite analyser sur github (notamment le format des fichiers).
 		- Lancer le build
 2. Retourner sur Sonarqube pour vérifier le traitement des données :
-![alt text](https://github.com/mi5hell/WebSite/blob/main/.src/sonarqube-valeur.jpg)
+![alt text](https://github.com/mi5hell/WebSite/blob/main/.src/sonarqube-valeur-website.jpg)
 
 ## 8. Option supplémentaire avec Jenkins
 Il est possible d'ajouter des fonctionnalités sur Jenkins, notamment d'automatisation du lancement du Build et également pour prendre en compte les vulnérabilités présentes sur la partie HTML avec OWASP. 
