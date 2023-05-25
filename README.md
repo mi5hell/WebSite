@@ -74,6 +74,8 @@ Pour configurer l'intégration entre GitHub et Jenkins, suivez les étapes suiva
 2. Retourner sur Sonarqube pour vérifier le traitement des données :
 ![alt text](https://github.com/mi5hell/WebSite/blob/main/.src/sonarqube-valeur-website.jpg)
 
+Pour les parties 6 et 7, nous avons une vidéo avec nos étapes de configuration : https://www.youtube.com/watch?v=6_AJoaOpAoE
+
 ## 8. Option supplémentaire avec Jenkins
 Il est possible d'ajouter des fonctionnalités sur Jenkins, notamment d'automatisation du lancement du Build et également pour prendre en compte les vulnérabilités présentes sur la partie HTML avec OWASP. 
 
