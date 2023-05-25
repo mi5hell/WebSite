@@ -38,6 +38,9 @@ L'intégration de GitHub, Jenkins et SonarQube permet de mettre en place un flux
 
 - Les résultats de l'analyse de SonarQube peuvent être intégrés dans le pipeline de Jenkins. Par exemple, si la qualité du code ne répond pas aux critères définis, Jenkins peut signaler une erreur ou empêcher le déploiement de l'application.
 
+Voici le schéma technique du fonctionnement des trois solutions :
+![alt text](https://github.com/mi5hell/WebSite/blob/main/.src/schema-infra-fonctionnement.jpg)
+
 ## 5. Installation des plugins sur Jenkins
 Deux plugins sont nécessaires pour permettre la communication entres les différentes solutions :
 1. Administraion > Gestion des plugins :
