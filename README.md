@@ -25,6 +25,9 @@ Jenkins est un outil open source d'intégration continue, essentiel dans les pro
 SonarQube est une plateforme d'analyse de la qualité du code. Elle fournit des informations détaillées sur la qualité du code source en détectant les problèmes potentiels, les vulnérabilités de sécurité et les violations des bonnes pratiques de développement. SonarQube prend en charge plusieurs langages de programmation et fournit des métriques et des rapports pour aider les équipes à améliorer la qualité de leur code.
 
 ## 4. Comment fonctionnent GitHub, Jenkins et SonarQube ensemble ?
+
+![alt text](https://github.com/mi5hell/WebSite/blob/main/schema-infra.jpg)
+
 L'intégration de GitHub, Jenkins et SonarQube permet de mettre en place un flux de travail cohérent pour le développement logiciel. Voici comment ils interagissent ensemble :
 
 - L'équipe de développement utilise GitHub pour héberger le code source de leur projet. Ils créent des branches, effectuent des modifications et proposent des demandes d'extraction pour intégrer les nouvelles fonctionnalités ou les corrections de bugs.
