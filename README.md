@@ -13,7 +13,8 @@ Bienvenue dans la présentation du projet SonarQube ! Cette documentation vous g
 - [6. Configuration de la liaion entre SonarQube et Jenkins](#6-configuration-de-la-liaion-entre-sonarqube-et-jenkins)
 - [7. Configuration de l'intégration entre GitHub et Jenkins](#7-configuration-de-l-intégration-entre-gitHub-et-jenkins)
 - [8. Option supplémentaire avec Jenkins](#8-option-supplémentaire-avec-jenkins)
-- [9. Conclusion](#9-conclusion)
+- [9. Version de l'environnement](#9-version-logiciel)
+- [10. Conclusion](#10-conclusion)
 
 ## 1. Qu est-ce que GitHub ?
 GitHub est une plateforme de développement collaboratif basée sur Git. Elle permet aux développeurs de stocker, gérer et partager leur code source, ainsi que de collaborer efficacement avec d'autres contributeurs. GitHub fournit également des fonctionnalités telles que le suivi des problèmes, les demandes d'extraction (pull request) et l'hébergement gratuit de dépôts de code open source.
@@ -89,7 +90,17 @@ Pour cela, suivez ces étapes :
 	  - Ajouter le Plugin : OWASP Markup Formatter Plugin
 	  - Dans Administrer Jenkins > Configurer la sécurité globale > Markup Formatter > Safe HTML
 		    - Puis sur SonarQube > sur notre projet > Issues :
-		        -> Un nouvel onglet Security Category est présent ou l'on peut voir les vulnérabilitées 
+		        -> Un nouvel onglet Security Category est présent ou l'on peut voir les vulnérabilitées
+			
+## 9. Version Logiciel
+Notre projet fonctionne avec les versions logiciels suivantes :
+	- SonarQube : Version 10.0 (build 68432)
+	- Jenkins : Version 2.387.3
+		- Plugins Jenkins :
+			- OWASP Markup Formatter Plugin : Version159.v25b_c67cd35fb_
+			- SonarQube Scanner for Jenkins : Version2.15
+			- Maven Integration plugin : Version3.22
+			- Parameterized Scheduler : Version1.2
 
-## 9. Conclusion
+## 10. Conclusion
 GitHub, Jenkins et SonarQube sont des outils puissants qui peuvent grandement améliorer le processus de développement logiciel. L'intégration de ces outils permet une collaboration efficace, une intégration continue et une analyse approfondie de la qualité du code. En utilisant GitHub pour gérer le code source, Jenkins pour l'intégration continue et SonarQube pour l'analyse de la qualité, les équipes de développement peuvent travailler plus efficacement et produire un code de meilleure qualité. N'hésitez pas à explorer davantage ces outils et à les intégrer à vos propres projets !
