@@ -33,21 +33,50 @@ L'intégration de GitHub, Jenkins et SonarQube permet de mettre en place un flux
 
 - Les résultats de l'analyse de SonarQube peuvent être intégrés dans le pipeline de Jenkins. Par exemple, si la qualité du code ne répond pas aux critères définis, Jenkins peut signaler une erreur ou empêcher le déploiement de l'application.
 
-## 5. Configuration de l'intégration entre GitHub et Jenkins
+## 5. Installation des plugins sur Jenkins
+Deux plugins sont nécessaires pour permettre la communication entres les différentes solutions :
+1. Administraion > Gestion des plugins :
+			- Maven Integration
+			- SonarQube Scanner
+				  - Configuration à faire > Configuration globale des outils > Ajouter SonarQube Scanner
+
+## 6. Configuration de la liaion entre SonarQube et Jenkins
+Pour configurer la liaion entre SonarQube et Jenkins, suivez les étapes suivantes :
+
+1. Première étape sur Sonarqube :
+  - Administration > Security > Générer un token pour Jenkins
+2. Deuxième étape sur Jenkins :
+  - Administration > Credentials > System > Identifiants globaux > Add Credentials :
+      - Ajouter le token généré dans Sonarqube, cela va permettre la communication entre les deux solutions
+  - Administration > Configure System > SonarQube Servers :
+      - Cocher Environment variables
+	    - Ajouter une installation SonarQube :
+		      - URL du serveur SonarQube
+		      - Insérer le token ajouter précédent
+
+## 7. Configuration de l'intégration entre GitHub et Jenkins
 Pour configurer l'intégration entre GitHub et Jenkins, suivez les étapes suivantes :
 
-1. Installez Jenkins sur votre serveur ou utilisez une version hébergée.
-2. Créez un nouveau projet Jenkins et configurez-le pour surveiller les modifications de votre dépôt GitHub.
-3. Définissez les étapes de votre pipeline Jenkins, telles que la compilation, les tests et le déploiement.
-4. Configurez les notifications pour recevoir des alertes en cas d'échec ou de réussite du pipeline.
+1. New Item > Projet Free-Style :
+    - Github Project + Code source GIT (définir la branche)
+		- Build Steps > Lancer une analyse avec SonarQube Scanner :
+		   - Ici on définit l'analyse avec le nom du projet, le token de sonarqube et ce qu'on souhaite analyser sur github (notamment le format des fichiers).
+		- Lancer le build
+2. Retourner sur Sonarqube pour vérifier le traitement des données
 
-## 6. Configuration de SonarQube pour l'analyse de la qualité du code
-Pour configurer SonarQube pour l'analyse de la qualité du code, suivez ces étapes :
+## 8. Option supplémentaire avec Jenkins
+Il est possible d'ajouter des fonctionnalités sur Jenkins, notamment d'automatisation du lancement du Build et également pour prendre en compte les vulnérabilités présentes sur la partie HTML. Pour cela, suivez ces étapes :
 
-1. Installez SonarQube sur votre serveur ou utilisez une version hébergée.
-2. Configurez votre projet SonarQube pour qu'il analyse le code source de votre application.
-3. Définissez les règles de qualité et les métriques que vous souhaitez surveiller.
-4. Intégrez SonarQube dans votre pipeline Jenkins pour obtenir des rapports de qualité du code.
+1. Automisation du lancement du Build sur Jenkins :
+	  - Ajouter le Plugin : Parameterized Scheduler
+	  - Puis on retourne sur le projet dans jenkins > Configurer > Ce qui déclenche le build > Construire périodiquement > Insérer le temps que l'on souhaite
+		    - Nous avons mis toutes les 10 minutes avec : H/10 * * * *
 
-## 7. Conclusion
+2. Prendre en compte les vulnérabilités HTML :
+	  - Ajouter le Plugin : OWASP Markup Formatter Plugin
+	  - Dans Administrer Jenkins > Configurer la sécurité globale > Markup Formatter > Safe HTML
+		    - Puis sur SonarQube > sur notre projet > Issues :
+		        -> Un nouvel onglet Security Category est présent ou l'on peut voir les vulnérabilitées 
+
+## 9. Conclusion
 GitHub, Jenkins et SonarQube sont des outils puissants qui peuvent grandement améliorer le processus de développement logiciel. L'intégration de ces outils permet une collaboration efficace, une intégration continue et une analyse approfondie de la qualité du code. En utilisant GitHub pour gérer le code source, Jenkins pour l'intégration continue et SonarQube pour l'analyse de la qualité, les équipes de développement peuvent travailler plus efficacement et produire un code de meilleure qualité. N'hésitez pas à explorer davantage ces outils et à les intégrer à vos propres projets !
